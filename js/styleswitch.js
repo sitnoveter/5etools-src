@@ -114,7 +114,7 @@ export class StyleSwitcher {
 
 	constructor () {
 		if (typeof window === "undefined") return;
-		this._setActiveStyleTheme(StyleSwitcher.storage.getItem(StyleSwitcher._STORAGE_KEY_THEME) || StyleSwitcher._STYLE_THEME_AUTOMATIC);
+		this._setActiveStyleTheme(StyleSwitcher.storage.getItem(StyleSwitcher._STORAGE_KEY_THEME) || StyleSwitcher._STYLE_THEME_NIGHT);
 		this._setActiveStyleRollbox(StyleSwitcher.storage.getItem(StyleSwitcher._STORAGE_KEY_ROLLBOX) || StyleSwitcher._STYLE_ROLLBOX_DEFAULT);
 		this._setActiveWide(StyleSwitcher.storage.getItem(StyleSwitcher._STORAGE_KEY_WIDE) === "true");
 	}
@@ -139,7 +139,7 @@ export class StyleSwitcher {
 
 	static _getDefaultStyleTheme () {
 		if (window.matchMedia("(prefers-color-scheme: dark)").matches) return StyleSwitcher._STYLE_THEME_NIGHT;
-		return StyleSwitcher.STYLE_THEME_DAY;
+		return StyleSwitcher._STYLE_THEME_NIGHT;
 	}
 
 	_setActiveStyleTheme (style) {

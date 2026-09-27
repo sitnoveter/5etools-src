@@ -1,0 +1,290 @@
+/* ==============================================================================
+   MESTRE PANDA - TEMA DARK & GOLD PARA 5ETOOLS
+   Identidade Visual: Dark Fantasy, Preto Profundo (#080B0D) & Ouro Imperial (#c7a660)
+   ============================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+/* 1. Variáveis Globais & Escopo Base */
+:root,
+:root.ve-night-mode,
+html,
+body {
+  --rgb-bg: #080B0D !important;
+  --rgb-bg--alt: #111622 !important;
+  --rgb-name: #dfc07c !important;
+  --rgb-font: #e2e8f0 !important;
+  --rgb-border--statblock: rgba(199, 166, 96, 0.35) !important;
+}
+
+/* 2. Plano de Fundo Geral */
+body,
+.ve-night-mode body,
+.viewport-wrapper,
+.page__header {
+  background-color: #080B0D !important;
+  background-image: radial-gradient(ellipse at 50% 0%, rgba(199, 166, 96, 0.08) 0%, transparent 60%) !important;
+  color: #e2e8f0 !important;
+  font-family: 'Inter', -apple-system, sans-serif !important;
+}
+
+/* 3. Barra Superior Mestre Panda */
+.mestre-panda-topbar {
+  background: #06080a !important;
+  border-bottom: 1px solid rgba(199, 166, 96, 0.25) !important;
+  position: relative;
+  z-index: 1000;
+}
+
+/* 4. Cabeçalho & Marca */
+.page__title,
+.ve-night-mode .page__title,
+#page__title {
+  font-family: 'Cinzel', Georgia, serif !important;
+  background: linear-gradient(180deg, #ffffff 20%, #f7ecd2 60%, #c7a660 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  letter-spacing: 0.06em !important;
+  filter: drop-shadow(0 2px 10px rgba(199, 166, 96, 0.35)) !important;
+}
+
+.page__title span,
+.ve-night-mode .page__title span {
+  color: #dfc07c !important;
+  -webkit-text-fill-color: #dfc07c !important;
+}
+
+.page__subtitle,
+.ve-night-mode .page__subtitle {
+  color: #94a3b8 !important;
+  letter-spacing: 0.08em !important;
+  font-size: 0.85rem !important;
+}
+
+/* 5. Barra de Navegação */
+.page__nav,
+.ve-night-mode .page__nav {
+  background: #0c1017 !important;
+  border-bottom: 1px solid rgba(199, 166, 96, 0.3) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6) !important;
+}
+
+.page__nav-inner > li > a,
+.ve-night-mode .page__nav-inner > li > a {
+  color: #cbd5e1 !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+.page__nav-inner > li > a:hover,
+.ve-night-mode .page__nav-inner > li > a:hover,
+.page__nav-inner > li.ve-active > a,
+.ve-night-mode .page__nav-inner > li.ve-active > a {
+  color: #dfc07c !important;
+  background: rgba(199, 166, 96, 0.15) !important;
+  border-radius: 4px !important;
+  text-shadow: 0 0 10px rgba(223, 192, 124, 0.4) !important;
+}
+
+.dropdown-menu,
+.ve-night-mode .dropdown-menu {
+  background-color: #0f141c !important;
+  border: 1px solid rgba(199, 166, 96, 0.35) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.85) !important;
+  border-radius: 6px !important;
+}
+
+.dropdown-menu > li > a,
+.ve-night-mode .dropdown-menu > li > a {
+  color: #cbd5e1 !important;
+  padding: 6px 16px !important;
+}
+
+.dropdown-menu > li > a:hover,
+.ve-night-mode .dropdown-menu > li > a:hover {
+  background-color: rgba(199, 166, 96, 0.2) !important;
+  color: #dfc07c !important;
+}
+
+/* 6. Botões da Página Inicial */
+.home__btn-page,
+.ve-night-mode .home__btn-page {
+  background: linear-gradient(155deg, rgba(17, 23, 33, 0.95) 0%, rgba(9, 12, 17, 0.98) 100%) !important;
+  border: 1px solid rgba(199, 166, 96, 0.3) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.55), inset 0 0 0 1px rgba(199, 166, 96, 0.06) !important;
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+  color: #e2e8f0 !important;
+}
+
+.home__btn-page:hover,
+.ve-night-mode .home__btn-page:hover {
+  transform: translateY(-4px) !important;
+  border-color: #dfc07c !important;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.75), 0 0 20px rgba(199, 166, 96, 0.3), inset 0 0 0 1px rgba(199, 166, 96, 0.25) !important;
+  color: #fff !important;
+}
+
+.home__btn-player,
+.ve-night-mode .home__btn-player {
+  border-color: rgba(199, 166, 96, 0.45) !important;
+}
+.home__btn-player .home__icn-page,
+.ve-night-mode .home__btn-player .home__icn-page {
+  color: #dfc07c !important;
+}
+
+.home__btn-rule,
+.ve-night-mode .home__btn-rule {
+  border-color: rgba(184, 150, 75, 0.45) !important;
+}
+.home__btn-rule .home__icn-page,
+.ve-night-mode .home__btn-rule .home__icn-page {
+  color: #c7a660 !important;
+}
+
+.home__btn-dm,
+.ve-night-mode .home__btn-dm {
+  border-color: rgba(220, 180, 90, 0.55) !important;
+}
+.home__btn-dm .home__icn-page,
+.ve-night-mode .home__btn-dm .home__icn-page {
+  color: #f3e2b8 !important;
+}
+
+.home__h-player,
+.home__h-rule,
+.home__h-dm {
+  text-decoration-color: #c7a660 !important;
+  color: #f7ecd2 !important;
+  font-family: 'Cinzel', Georgia, serif !important;
+  letter-spacing: 0.04em !important;
+}
+
+.home__lbl-page {
+  color: #f1f5f9 !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.03em !important;
+}
+
+/* 7. Caixas de Estatísticas (Statblocks) & Conteúdo */
+table.stats,
+.ve-night-mode table.stats,
+.stats-table,
+.ve-night-mode .stats-table,
+.statblock,
+.ve-night-mode .statblock {
+  background-color: #0b0f14 !important;
+  border: 1px solid rgba(199, 166, 96, 0.32) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6) !important;
+  border-radius: 6px !important;
+}
+
+.stats-name,
+.ve-night-mode .stats-name {
+  color: #dfc07c !important;
+  font-family: 'Cinzel', Georgia, serif !important;
+  letter-spacing: 0.03em !important;
+}
+
+/* 8. Formulários, Entradas de Busca & Filtros */
+.ve-form-control,
+input.form-control,
+select.form-control,
+.ve-night-mode .ve-form-control,
+.ve-night-mode input.form-control,
+.ve-night-mode select.form-control {
+  background-color: #0a0d12 !important;
+  border: 1px solid rgba(199, 166, 96, 0.3) !important;
+  color: #f1f5f9 !important;
+  border-radius: 4px !important;
+}
+
+.ve-form-control:focus,
+input.form-control:focus,
+select.form-control:focus,
+.ve-night-mode .ve-form-control:focus {
+  border-color: #dfc07c !important;
+  box-shadow: 0 0 10px rgba(199, 166, 96, 0.3) !important;
+}
+
+.omni__input,
+.ve-night-mode .omni__input {
+  background: #0a0d12 !important;
+  border: 1px solid rgba(199, 166, 96, 0.35) !important;
+  color: #f1f5f9 !important;
+}
+
+.omni__input:focus,
+.ve-night-mode .omni__input:focus {
+  border-color: #dfc07c !important;
+  box-shadow: 0 0 12px rgba(199, 166, 96, 0.35) !important;
+}
+
+/* 9. Botões Primários e Padrão */
+.ve-btn-default,
+.btn-default,
+.ve-night-mode .ve-btn-default,
+.ve-night-mode .btn-default {
+  background: #111622 !important;
+  border: 1px solid rgba(199, 166, 96, 0.35) !important;
+  color: #cbd5e1 !important;
+  border-radius: 4px !important;
+  transition: all 0.2s ease !important;
+}
+
+.ve-btn-default:hover,
+.btn-default:hover,
+.ve-night-mode .ve-btn-default:hover,
+.ve-night-mode .btn-default:hover {
+  background: rgba(199, 166, 96, 0.18) !important;
+  border-color: #dfc07c !important;
+  color: #fff !important;
+}
+
+.ve-btn-primary,
+.btn-primary,
+.ve-night-mode .ve-btn-primary,
+.ve-night-mode .btn-primary {
+  background: linear-gradient(180deg, #c7a660 0%, #9e7f3c 100%) !important;
+  border: 1px solid #dfc07c !important;
+  color: #000 !important;
+  font-weight: 600 !important;
+  box-shadow: 0 2px 8px rgba(199, 166, 96, 0.35) !important;
+}
+
+.ve-btn-primary:hover,
+.btn-primary:hover,
+.ve-night-mode .ve-btn-primary:hover,
+.ve-night-mode .btn-primary:hover {
+  background: linear-gradient(180deg, #dfc07c 0%, #b8974d 100%) !important;
+  box-shadow: 0 4px 14px rgba(199, 166, 96, 0.5) !important;
+  color: #000 !important;
+}
+
+/* 10. Links e Modais */
+a,
+.ve-night-mode a {
+  color: #dfc07c;
+}
+
+a:hover,
+.ve-night-mode a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(223, 192, 124, 0.4);
+}
+
+.ve-ui-modal__inner,
+.ve-night-mode .ve-ui-modal__inner {
+  background: #0c1017 !important;
+  border: 1px solid rgba(199, 166, 96, 0.4) !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.95), 0 0 30px rgba(199, 166, 96, 0.15) !important;
+  border-radius: 8px !important;
+}
+
+.ve-ui-modal__header--border,
+.ve-night-mode .ve-ui-modal__header--border,
+.ve-ui-modal__footer,
+.ve-night-mode .ve-ui-modal__footer {
+  border-color: rgba(199, 166, 96, 0.25) !important;
+}
